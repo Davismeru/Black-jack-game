@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>card displayer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="randomCards">
+		<img src="img/back.jpeg" id="sidecard">
+		<img src="img/back.jpeg" id="sidecard1">
+		<img src="img/back.jpeg" id="sidecard2">
+		<img src="img/back.jpeg" id="sidecard3">
+		<img src="img/back.jpeg" id="sidecard4">
+		<img src="img/back.jpeg" id="sidecard5">
+		<img src="img/back.jpeg" id="sidecard6">
+	</div>
+	<div class="wrapper">
+		<div class="slots">
+
+			<div class="part">
+				<div class="slot-1">
+					<img src="img/back.jpeg">
+				</div>
+				<div class="slot-2">
+					<img src="img/back.jpeg">
+				</div>
+			</div>
+
+			<div class="part">
+				<div class="slot-3">
+					<img src="img/back.jpeg">
+				</div>
+				<div class="total">
+
+				</div>
+			</div>
+		</div>
+
+		<div class="message"><h6 id="message">_</h6></div>
+
+		<div class="buttons">
+			<input type="button" value="Pick cards" id="pickBtn">
+			<input type="button" value="Draw card" id="drawBtn">
+			<input type="button" value="New game" id="newBtn">
+			<input type="button" value="Help" id="helpBtn">
+		</div>
+	</div>
+
+	<div class="alert">
+			1. the objective of the game is to pick cards that sum upto 21
+			2. if cards picked give a sum of more than 21, the you loose
+			3. If the cards picked give a sum of less than 21, you can always draw a new card to help you reach a total of 21 but not exceed 21 
+	</div>
+
+	<div class="randomCards1">
+		<img src="img/back.jpeg">
+		<img src="img/back.jpeg">
+		<img src="img/back.jpeg">
+		<img src="img/back.jpeg">
+		<img src="img/back.jpeg">
+		<img src="img/back.jpeg">
+		<img src="img/back.jpeg">>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: cursive;
+}
+
+.randomCards {
+	position: absolute;
+	top: 2%;
+	left: 2%;
+	display: flex;
+	flex-direction: column;
+}
+
+.randomCards1 {
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	display: flex;
+	flex-direction: column;
+}
+
+.randomCards img , .randomCards1 img{
+	width: 30px;
+	margin: 5px;
+	cursor: pointer;
+} 
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url(../img/background.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+body::before {
+	content: '';
+	position: absolute;
+	background: linear-gradient(to right, #1700ff26, rgba(0,0,0,.3));
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	height: auto;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 1px 1px 6px #000;
+	border-radius: 5px;
+	padding: 1em;
+	z-index: 1;
+	background: linear-gradient(to left, maroon, red)
+}
+.wrapper::before {
+	content: '';
+	position: absolute;
+	background: rgba(255,255,255, .2);
+	height: 100vh;
+	width: 450px;
+	z-index: -1;
+}
+
+.slots {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.part {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.part div {
+	width: 100px;
+	height: 130px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	padding: 5px;
+	box-shadow: 1px 1px 5px #000;
+	border-radius: 5px;
+	color: white;
+
+}
+
+.part img {
+	animation: emerge;
+	animation-duration: .3s;
+	animation-timing-function: linear; 
+	width: 90px;
+	height: 120px;
+}
+
+input {
+	padding: 5px;
+	margin: 5px;
+	border: none;
+	box-shadow: 1px 1px 3px #000;
+	background: transparent;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: .5s;
+}
+
+input:hover {
+	transform: scale(1.2);
+}
+
+
+@keyframes emerge {
+	from {
+		transform: rotateY(1080deg);
+		position: absolute;
+		left: 0%;
+	}
+	
+	to {
+		transform: initial;
+		position: absolute;
+		left: 38.5%;
+	}
+}
+
+
+.alert {
+	display: none;
+	list-style: 1;
+}
